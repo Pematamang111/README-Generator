@@ -1,7 +1,6 @@
 const express = require('express');
 const bodyparser = require('body-parser');
 const stripe = require('stripe')('')
-//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
 const uuid = require('uuid').v4;
 const cors = require('cors');
 
