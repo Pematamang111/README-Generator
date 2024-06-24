@@ -4,7 +4,8 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
 const Home = () => {
-	const [product] = useState({
+    toast.configure();
+    const [product] = useState({
 		name: 'Pajama',
 		price: 250,
 		description: 'Soft and made of 100 percent cotton',
