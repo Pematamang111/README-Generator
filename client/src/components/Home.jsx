@@ -30,6 +30,13 @@ const Home = () => {
 			<div className="container">
 				<br />
 				<h2 className="text-center">Stripe Payment</h2>
+                <br />
+                <br />
+                <h2 className='text-center'>Product Name: {product.name}</h2>
+                <h3 className='text-center'>Product Description: {product.description}</h3>
+                <h3 className='text-center'>Product Price: {product.price}</h3>
+                <br />
+                <br />
 			</div>
 			<div className="form-group container">
 				<StripeCheckout
