@@ -4,8 +4,8 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
 const Home = () => {
-    toast.configure();
-    const [product] = useState({
+	toast.configure();
+	const [product] = useState({
 		name: 'Pajama',
 		price: 250,
 		description: 'Soft and made of 100 percent cotton',
@@ -17,6 +17,12 @@ const Home = () => {
 			product,
 		});
 		console.log(response.status);
+
+		if (response.status === 200) {
+			toast('Payment successfully completed', { type: 'success' });
+		} else {
+			toast('Payment Failure', { type: 'error' });
+		}
 	}
 
 	return (
