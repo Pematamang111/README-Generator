@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import StripeCheckout from 'react-stripe-checkout';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
 const Home = () => {
 	const [product] = useState({
