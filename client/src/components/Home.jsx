@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import StripeCheckout from 'react-stripe-checkout';
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+//import { toast } from 'react-toastify';
+//import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
 const Home = () => {
-	toast.configure();
+	//toast.configure();
 	const [product] = useState({
 		name: 'Pajama',
 		price: 250,
-		description: 'Soft and made of 100 percent cotton',
+		description: 'Soft and it is 100 percent cotton',
 	});
 
 	async function handleToken(token, addresses) {
@@ -19,9 +19,11 @@ const Home = () => {
 		console.log(response.status);
 
 		if (response.status === 200) {
-			toast('Payment successfully completed', { type: 'success' });
+			//toast('Payment successfully completed', { type: 'success' });
+            alert('Payment successfully completed')
 		} else {
-			toast('Payment Failure', { type: 'error' });
+			//toast('Payment Failure', { type: 'error' });
+            alert('Payment successfully completed')
 		}
 	}
 
