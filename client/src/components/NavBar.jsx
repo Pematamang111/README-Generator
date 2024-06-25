@@ -1,5 +1,10 @@
 const NavBar = () => {
-    return ( <h2>NavBar</h2> );
+    return ( 
+       <div className="flex-end container">
+        <a href="/login">Login</a>
+        <a href="/signup">SignUp</a>
+        </div>
+     );
 }
  
 export default NavBar;
